@@ -1,0 +1,26 @@
+[
+  {
+    "image": "https://s3-alpha-sig.figma.com/img/195c/50aa/cae1ce853bfa8491397366bd39ab1c07?Expires=1698624000&Signature=pQxaDZb5uPmhNUcBkDW1tlcGBxd71WrNf~L9LvfsrHBZbhgry6uf4ktipCaADepfn5kgu7lmWuhOSzYL070sNR49W-sMJ54dj51Pysc-mR2rKLaJrRKHfFT3up7LwKx6MrFW6JcKWX6xEEt1OjIkv9M6FPIXZOloCOPPW0nHEEoizdww6pmNpBqnIyH~OSPZ8kMcOr~~JGNybGRyKyy0cPsUhtjnilecFtJZmZC0uBj3We~BQVfQ-NP0ddr-~okyKjWlX1xlWkZ-GWMLyCFT3VHtd5nYmr6tYB0Auh0JqI-Z3vGSKW1E6t6mNMTwl2hdnzwgWTPZ7hs6X5HljclhkA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "name": "Nashville",
+    "description": "53 miles away",
+    "bg-color":"#CC2D4A;"
+  },
+  {
+    "image": "https://s3-alpha-sig.figma.com/img/25c4/d100/703fbc6a52d0ce61cdbfd22b50b3e4a4?Expires=1698624000&Signature=VgIhrVtAHx1dnjPy5s5T6C5dWwB4r8S7ECfGIiU3YROsG46XUqLlLdimIwCG~z~QBon6IgHD9zl9i-mubgt-W~oqvl7kWiz6Ldz78JqD1vhEfIvVTqFe6AthuHkvgwadmYJHocJxRQSJomrpulnBGm9ccdaWqMaVt-gCOvvfzVLXS7hk35OibFW-b1k1A1N2vosFt65MmKvMQDBc~aAgSrKh5BrzLmHhAhlZ9ktmGzmfe9yNEJHdYWgWtLs5~qxbR-oRDLvOYotD1FO7xK62PeAKBWtqWQntulUBRI1FsW1WEX5m~CEZUuLolKzMcRiCu~LoZUJqiYR8zMaYqZ6ahg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "name": "South Haven",
+    "description": "168 miles away",
+    "bg-color":"#BC1A6E;"
+  },
+  {
+    "image": "https://s3-alpha-sig.figma.com/img/2505/45ae/0f2fb4717faf2770cbcd7be3562f9696?Expires=1698624000&Signature=ApEQJmpfRzgcUOyDMTT3~6agOe~T4Vz6T4k-C1RJolYERlHjevCeYCbCRYARVJZ7WdGifM42CemS-hzvkVX9pjlLHs4oXz~bg8HTvodVncectjCp8MSucEMlc7SZbeEpC55~56WfJsPIpSJTHIRPi3iWKCwziFbtBfbOMRA82gMLc7VMdghncI34~6T2lNO~l8s2SfrXvemacwIwLUAc2XUrVZX547KEavLm5o-ZuRcGvO~jflaGTpEXtDz5FESnw4iAy6wtcAuzkFtVIW6NPlTtxIO4FFIQZbzDifeq-zYBQRt1cC1h~qIy6ovR02Bt7l5d0YxUxwEfYIRwdELAiw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "name": "Stanton",
+    "description": "192 miles away",
+    "bg-color":"#DE3151;"
+  },
+  {
+    "image": "https://s3-alpha-sig.figma.com/img/25c4/d100/703fbc6a52d0ce61cdbfd22b50b3e4a4?Expires=1698624000&Signature=VgIhrVtAHx1dnjPy5s5T6C5dWwB4r8S7ECfGIiU3YROsG46XUqLlLdimIwCG~z~QBon6IgHD9zl9i-mubgt-W~oqvl7kWiz6Ldz78JqD1vhEfIvVTqFe6AthuHkvgwadmYJHocJxRQSJomrpulnBGm9ccdaWqMaVt-gCOvvfzVLXS7hk35OibFW-b1k1A1N2vosFt65MmKvMQDBc~aAgSrKh5BrzLmHhAhlZ9ktmGzmfe9yNEJHdYWgWtLs5~qxbR-oRDLvOYotD1FO7xK62PeAKBWtqWQntulUBRI1FsW1WEX5m~CEZUuLolKzMcRiCu~LoZUJqiYR8zMaYqZ6ahg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "name": "New Buffalo",
+    "description": "130 miles away",
+    "bg-color":"#D93B30;"
+  }
+]

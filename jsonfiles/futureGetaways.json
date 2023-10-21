@@ -1,0 +1,46 @@
+[{
+    "header":"Phoenix",
+    "description":"Arizona"
+},
+{
+    "header":"Hot Springs",
+    "description":"Arkansas"
+},
+{
+    "header":"Los Angeles",
+    "description":"California"
+},
+{
+    "header":"San Diego",
+    "description":"California"
+},
+{
+    "header":"San Francisco",
+    "description":"California"
+},
+{
+    "header":"Barcelona",
+    "description":"Catalonia"
+},
+{
+    "header":"Prague",
+    "description":"Czechia"
+},
+{
+    "header":"Washington",
+    "description":"District of Columbia"
+},
+{
+    "header":"Keswick",
+    "description":"England"
+},
+{
+    "header":"London",
+    "description":"England"
+},
+{
+    "header":"Scarborough",
+    "description":"England"
+}
+
+]

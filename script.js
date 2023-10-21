@@ -1,5 +1,5 @@
-import travelDestination from "../jsonfiles/travelDestination.json" assert { type: "json" };
-import futureGetaways from "../jsonfiles/futureGetaways.json" assert { type: "json" };
+import travelDestination from "./jsonfiles/travelDestination.json" assert { type: "json" };
+import futureGetaways from "./jsonfiles/futureGetaways.json" assert { type: "json" };
 
 let travelCards = document.querySelector(".travelCards");
 let getaways = document.querySelector(".getaways");

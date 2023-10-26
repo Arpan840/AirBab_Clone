@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../LocationDetails/style.css" />
+  </head>
+  <body>
+    <nav class="d-flex p-4 w-100 align-items-center">
+      <div class="w-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="102"
+          height="32"
+          viewBox="0 0 102 32"
+          fill="none"
+        >
+          <path
+            d="M29.24 22.6799C29.08 22.2899 28.93 21.8799 28.77 21.5299L28.03 19.8599L28 19.8299C25.8 15.0299 23.45 10.1499 20.96 5.34994L20.86 5.14994C20.61 4.67994 20.36 4.15994 20.1 3.67994C19.78 3.10994 19.47 2.49994 18.96 1.91994C18.4629 1.31308 17.8372 0.824133 17.1282 0.488399C16.4192 0.152666 15.6445 -0.0214844 14.86 -0.0214844C14.0755 -0.0214844 13.3008 0.152666 12.5918 0.488399C11.8828 0.824133 11.2571 1.31308 10.76 1.91994C10.29 2.49994 9.94 3.10994 9.62 3.67994C9.37 4.19994 9.12 4.70994 8.86 5.17994L8.76 5.37994C6.31 10.1799 3.92 15.0599 1.72 19.8599L1.66 19.9199C1.44 20.4399 1.18 20.9799 0.930001 21.5599C0.770001 21.9099 0.610001 22.2899 0.450001 22.7099C0.0180336 23.8097 -0.119907 25.0031 0.0497732 26.1724C0.219454 27.3418 0.690899 28.4467 1.41765 29.3784C2.14439 30.31 3.10136 31.0362 4.19423 31.4854C5.2871 31.9346 6.47815 32.0912 7.65 31.9399C8.77347 31.7921 9.85528 31.4178 10.83 30.8399C12.13 30.1099 13.38 29.0499 14.78 27.5199C16.18 29.0499 17.46 30.1099 18.73 30.8499C19.9513 31.5668 21.3344 31.9624 22.75 31.9999C24.3894 32.0068 25.9758 31.4202 27.2165 30.3487C28.4571 29.2771 29.2682 27.7928 29.5 26.1699C29.7678 25.0037 29.6772 23.7838 29.24 22.6699V22.6799ZM14.88 24.3399C13.16 22.1399 12.04 20.1199 11.66 18.3899C11.5026 17.7489 11.4686 17.0837 11.56 16.4299C11.63 15.9199 11.82 15.4699 12.08 15.0899C12.68 14.2199 13.73 13.6799 14.88 13.6799C15.4261 13.6633 15.9679 13.7824 16.4566 14.0268C16.9453 14.2711 17.3657 14.633 17.68 15.0799C17.94 15.4799 18.13 15.9199 18.19 16.4299C18.29 17.0099 18.25 17.6799 18.09 18.3899C17.71 20.0899 16.59 22.1299 14.88 24.3399ZM27.62 25.8199C27.5064 26.6439 27.1789 27.4237 26.67 28.0816C26.1612 28.7396 25.4889 29.2527 24.72 29.5699C23.96 29.8899 23.12 29.9799 22.3 29.8899C21.5 29.7899 20.7 29.5299 19.88 29.0499C18.5185 28.2084 17.2943 27.1629 16.25 25.9499C18.35 23.3499 19.62 20.9799 20.1 18.8699C20.33 17.8699 20.36 16.9699 20.26 16.1399C20.1351 15.3532 19.8418 14.6028 19.4 13.9399C18.8956 13.2212 18.2223 12.6374 17.4394 12.2398C16.6565 11.8423 15.7879 11.6431 14.91 11.6599C13.06 11.6599 11.41 12.5199 10.41 13.9299C9.95984 14.5911 9.66891 15.3475 9.56 16.1399C9.43 16.9799 9.46 17.9099 9.72 18.8699C10.2 20.9799 11.5 23.3799 13.57 25.9699C12.5435 27.2061 11.3164 28.2608 9.94 29.0899C9.11 29.5699 8.32 29.8199 7.52 29.9199C6.27589 30.0793 5.01915 29.7412 4.02296 28.9791C3.02677 28.2169 2.37165 27.0924 2.2 25.8499C2.1 25.0499 2.17 24.2499 2.49 23.3499C2.59 23.0299 2.74 22.7099 2.9 22.3299C3.12 21.8099 3.38 21.2699 3.63 20.7299L3.67 20.6599C5.83 15.8899 8.19 11.0199 10.64 6.24994L10.74 6.04994C10.99 5.56994 11.24 5.05994 11.5 4.57994C11.76 4.06994 12.04 3.57994 12.4 3.17994C12.7116 2.80797 13.101 2.50882 13.5407 2.30356C13.9804 2.09831 14.4597 1.99193 14.945 1.99193C15.4303 1.99193 15.9096 2.09831 16.3493 2.30356C16.789 2.50882 17.1784 2.80797 17.49 3.17994C17.84 3.57994 18.13 4.06994 18.39 4.57994C18.64 5.05994 18.89 5.57995 19.15 6.04994L19.25 6.24994C21.69 11.0199 24.05 15.8899 26.25 20.6599L26.28 20.6899C26.54 21.2099 26.76 21.7899 27.01 22.2899C27.17 22.6799 27.33 22.9899 27.43 23.3199C27.62 24.2199 27.72 25.0199 27.62 25.8199ZM41.54 24.1199C40.7865 24.131 40.0401 23.9722 39.3563 23.6554C38.6725 23.3386 38.0688 22.8719 37.59 22.2899C36.5141 21.0499 35.943 19.451 35.99 17.8099C35.9735 16.1332 36.563 14.5068 37.65 13.2299C38.1528 12.6406 38.7787 12.1686 39.4836 11.8472C40.1885 11.5259 40.9553 11.3629 41.73 11.3699C42.4589 11.35 43.181 11.5157 43.8282 11.8516C44.4755 12.1875 45.0267 12.6824 45.43 13.2899L45.53 11.7199H48.45V23.7999H45.52L45.42 22.0399C45.0042 22.6886 44.4294 23.2202 43.7503 23.5842C43.0713 23.9483 42.3104 24.1327 41.54 24.1199ZM42.3 21.2399C42.88 21.2399 43.39 21.0799 43.87 20.7899C44.31 20.4699 44.67 20.0499 44.95 19.5399C45.2 19.0299 45.33 18.4199 45.33 17.7399C45.369 17.1493 45.254 16.5587 44.9964 16.0259C44.7387 15.493 44.3471 15.0361 43.86 14.6999C43.3919 14.4083 42.8515 14.2537 42.3 14.2537C41.7485 14.2537 41.2081 14.4083 40.74 14.6999C40.3 15.0199 39.94 15.4399 39.66 15.9499C39.3956 16.5124 39.2655 17.1286 39.28 17.7499C39.241 18.3405 39.356 18.9312 39.6136 19.464C39.8713 19.9969 40.2629 20.4538 40.75 20.7899C41.22 21.0799 41.73 21.2399 42.3 21.2399ZM53.45 8.45994C53.45 8.80995 53.39 9.12994 53.23 9.38995C53.07 9.63995 52.85 9.86994 52.56 10.0299C52.27 10.1899 51.96 10.2499 51.64 10.2499C51.32 10.2499 51 10.1899 50.71 10.0299C50.4357 9.87726 50.2051 9.65694 50.04 9.38995C49.8851 9.10508 49.8092 8.78401 49.82 8.45994C49.82 8.09995 49.89 7.77994 50.04 7.52994C50.2 7.22994 50.43 7.04994 50.71 6.88994C51 6.72994 51.31 6.65994 51.64 6.65994C51.9583 6.65261 52.2731 6.728 52.5535 6.87874C52.834 7.02948 53.0705 7.25042 53.24 7.51994C53.3855 7.81149 53.4576 8.13418 53.45 8.45994ZM50.05 23.7599V11.6999H53.23V23.7799H50.04L50.05 23.7599ZM61.73 14.8599V14.8999C61.58 14.8299 61.38 14.7999 61.23 14.7699C61.03 14.7299 60.87 14.7299 60.68 14.7299C59.79 14.7299 59.12 14.9899 58.68 15.5299C58.2 16.0799 57.98 16.8499 57.98 17.8399V23.7699H54.79V11.6899H57.72L57.82 13.5199C58.14 12.8799 58.52 12.3999 59.06 12.0399C59.5971 11.6902 60.2295 11.5155 60.87 11.5399C61.1 11.5399 61.32 11.5599 61.51 11.5999C61.61 11.6299 61.67 11.6299 61.73 11.6599V14.8599ZM63.01 23.7599V6.73994H66.19V13.2399C66.64 12.6599 67.15 12.2099 67.79 11.8599C68.8032 11.3632 69.9542 11.2223 71.0573 11.4599C72.1604 11.6976 73.1513 12.3 73.87 13.1699C74.9483 14.4125 75.5195 16.0154 75.47 17.6599C75.4865 19.3367 74.897 20.9631 73.81 22.2399C73.3072 22.8293 72.6813 23.3013 71.9764 23.6227C71.2715 23.944 70.5047 24.1069 69.73 24.0999C69.0011 24.1199 68.279 23.9541 67.6318 23.6183C66.9845 23.2824 66.4333 22.7875 66.03 22.1799L65.93 23.7499L63.01 23.7799V23.7599ZM69.16 21.2399C69.73 21.2399 70.24 21.0799 70.72 20.7899C71.16 20.4699 71.52 20.0499 71.8 19.5399C72.06 19.0299 72.18 18.4199 72.18 17.7399C72.18 17.0699 72.06 16.4599 71.8 15.9499C71.5374 15.4582 71.1684 15.0312 70.72 14.6999C70.2519 14.4083 69.7115 14.2537 69.16 14.2537C68.6085 14.2537 68.0681 14.4083 67.6 14.6999C67.15 15.0199 66.8 15.4399 66.51 15.9499C66.2456 16.5124 66.1155 17.1286 66.13 17.7499C66.091 18.3405 66.206 18.9312 66.4636 19.464C66.7213 19.9969 67.1129 20.4538 67.6 20.7899C68.07 21.0799 68.58 21.2399 69.16 21.2399ZM76.67 23.7699V11.6899H79.6L79.7 13.2599C80.0682 12.6581 80.5905 12.1656 81.2129 11.8333C81.8352 11.501 82.5351 11.3411 83.24 11.3699C84.0461 11.356 84.8384 11.5801 85.5178 12.0141C86.1973 12.448 86.7337 13.0727 87.06 13.8099C87.41 14.5699 87.6 15.5099 87.6 16.5599V23.7999H84.41V16.9799C84.41 16.1399 84.22 15.4799 83.84 14.9899C83.46 14.5099 82.94 14.2499 82.28 14.2499C81.8 14.2499 81.38 14.3499 81.01 14.5699C80.66 14.7999 80.37 15.0899 80.15 15.4999C79.9276 15.9144 79.8173 16.3798 79.83 16.8499V23.7699H76.67ZM89.19 23.7699V6.72994H92.38V13.2299C92.8121 12.6467 93.3742 12.1722 94.0216 11.8441C94.6691 11.5161 95.3842 11.3434 96.11 11.3399C96.8635 11.3289 97.6099 11.4877 98.2937 11.8045C98.9775 12.1213 99.5812 12.588 100.06 13.1699C101.131 14.4125 101.698 16.0105 101.65 17.6499C101.667 19.3269 101.078 20.9536 99.99 22.2299C99.4872 22.8193 98.8613 23.2913 98.1564 23.6127C97.4515 23.934 96.6847 24.0969 95.91 24.0899C95.1811 24.1099 94.459 23.9441 93.8118 23.6083C93.1645 23.2724 92.6133 22.7775 92.21 22.1699L92.12 23.7399L89.19 23.7699ZM95.37 21.2399C95.95 21.2399 96.46 21.0799 96.93 20.7899C97.38 20.4699 97.73 20.0499 98.02 19.5399C98.27 19.0299 98.4 18.4199 98.4 17.7399C98.439 17.1493 98.324 16.5587 98.0664 16.0259C97.8087 15.493 97.4171 15.0361 96.93 14.6999C96.4619 14.4083 95.9215 14.2537 95.37 14.2537C94.8185 14.2537 94.2781 14.4083 93.81 14.6999C93.37 15.0199 93.01 15.4399 92.73 15.9499C92.4509 16.5074 92.32 17.1273 92.35 17.7499C92.311 18.3405 92.426 18.9312 92.6837 19.464C92.9413 19.9969 93.3329 20.4538 93.82 20.7899C94.29 21.0799 94.77 21.2399 95.37 21.2399Z"
+            fill="#DE3151"
+          />
+        </svg>
+      </div>
+      <div class="rounded-pill d-flex gap-3 container align-items-center">
+        <div><b>Bordeaux</b></div>
+        <div><b>Feb 19-26</b></div>
+        <div><b>2 guests</b></div>
+        <button class="rounded-circle bg-redVelvet p-3 no-border">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M16.0416 16.0416L12.9166 12.9166M3.95831 9.16658C3.95831 6.2901 6.29016 3.95825 9.16665 3.95825C12.0431 3.95825 14.375 6.2901 14.375 9.16658C14.375 12.0431 12.0431 14.3749 9.16665 14.3749C6.29016 14.3749 3.95831 12.0431 3.95831 9.16658Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="d-flex gap-3 align-items-center justify-content-end">
+        <b>Become a Host</b>
+        <button class="btn btn-light">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M19.25 12C19.25 16.0041 16.0041 19.25 12 19.25C7.99594 19.25 4.75 16.0041 4.75 12C4.75 7.99594 7.99594 4.75 12 4.75C16.0041 4.75 19.25 7.99594 19.25 12Z"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.25 12C15.25 16.5 13.2426 19.25 12 19.25C10.7574 19.25 8.75 16.5 8.75 12C8.75 7.5 10.7574 4.75 12 4.75C13.2426 4.75 15.25 7.5 15.25 12Z"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M5 12H19"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button class="btn btn-light">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M4.75 5.75H19.25"
+              stroke="#111827"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4.75 18.25H19.25"
+              stroke="#111827"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4.75 12H19.25"
+              stroke="#111827"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button class="btn btn-light">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <mask
+              id="mask0_4679_906"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="32"
+              height="32"
+            >
+              <circle cx="16" cy="16" r="16" fill="#F3F4F6" />
+            </mask>
+            <g mask="url(#mask0_4679_906)">
+              <path
+                d="M32 27.9918V32.0012H0V28.0065C1.86127 25.5191 4.27721 23.5003 7.05572 22.1106C9.83423 20.7209 12.8987 19.9986 16.0053 20.0012C22.544 20.0012 28.352 23.1398 32 27.9918ZM21.336 11.9998C21.336 13.4143 20.7741 14.7709 19.7739 15.7711C18.7737 16.7713 17.4172 17.3332 16.0027 17.3332C14.5882 17.3332 13.2316 16.7713 12.2314 15.7711C11.2312 14.7709 10.6693 13.4143 10.6693 11.9998C10.6693 10.5853 11.2312 9.22879 12.2314 8.2286C13.2316 7.22841 14.5882 6.6665 16.0027 6.6665C17.4172 6.6665 18.7737 7.22841 19.7739 8.2286C20.7741 9.22879 21.336 10.5853 21.336 11.9998Z"
+                fill="#D1D5DB"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Bordeaux Getaway</h1>
+      <div class="d-flex gap-3 w-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path
+            d="M7.99996 3.16675L9.16663 6.83341H12.8333L9.83329 9.16675L10.8333 12.8334L7.99996 10.5001L5.16663 12.8334L6.16663 9.16675L3.16663 6.83341H6.83329L7.99996 3.16675Z"
+            stroke="#DE3151"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        5.0
+        <p>7 reviews</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path
+            d="M9.50004 5.83341L12.1667 3.16675H3.83337L6.50004 5.83341"
+            stroke="#DE3151"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.5 9.33325C11.5 11.2662 9.933 12.8333 8 12.8333C6.067 12.8333 4.5 11.2662 4.5 9.33325C4.5 7.40026 6.067 5.83325 8 5.83325C9.933 5.83325 11.5 7.40026 11.5 9.33325Z"
+            stroke="#DE3151"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <p>Superhost</p>
+        <p>Bordeaux, France</p>
+        <div class="d-flex justify-content-end w-50">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M6.16675 3.16675H4.50008C3.7637 3.16675 3.16675 3.7637 3.16675 4.50008V11.5001C3.16675 12.2365 3.7637 12.8334 4.50008 12.8334H11.5001C12.2365 12.8334 12.8334 12.2365 12.8334 11.5001V9.83341"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12.8333 6.16675V3.16675H9.83325"
+              stroke="#141414"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12.6666 3.33325L7.83325 8.16659"
+              stroke="#141414"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p>Share</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.99677 4.82206C7.03042 3.73992 5.41896 3.44883 4.20818 4.43974C2.99741 5.43065 2.82695 7.08741 3.77778 8.25937L7.99677 12.1666L12.2158 8.25937C13.1666 7.08741 13.0169 5.42023 11.7854 4.43974C10.5538 3.45925 8.96313 3.73992 7.99677 4.82206Z"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p>Save</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="d-flex">
+        <img
+          class="w-50 m-1"
+          src="https://s3-alpha-sig.figma.com/img/33e7/8912/bbfb42ca5051f5492bcbda4a216dccc6?Expires=1699228800&Signature=KA-mSJoUqIM4BdD2C7ZU5ieDp~hgQacDC3LaDq9z2iPY29H1s8rihQ0EZVcu6EShNkMdbpwB4r2G-3RqK1D5F~RU1I9U~S95hpwmx8L99Ln0xTYeYZO1aLFlqbhublSuBukZmuIXTbJEzoe8wQFEitp~PbD3L3BL6ktwrxdU3voykAwZ~JmnwNAgFmMjypA9mqd-~GzJpky3A~JOn4JjUmicwtQxkO~4USOSoStesmd~K87WTa5HZmU0bn1MQGez5hvHZueS3KwrdrXHsbzr61suBuf~6bKea29eGmFh1rXaeSn1xRysZ6YPluQzwh3Dyjaylo19GLBEKumfChmJuw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt="hotelGalary"
+        />
+        <div>
+          <div class="d-flex">
+            <img
+              class="w-50 m-1"
+              src="https://s3-alpha-sig.figma.com/img/7e95/b547/ccb35f41cb8bca5561addab0467b9ce5?Expires=1699228800&Signature=hJ-Cyv1hlNG9H6hwNBjfKxsoH20g5R3Ybf3c-LEwyc3dgsiGF7Gn6DY5oIbA0kf8SFNPOckzlVxYy3JOQqU3B6P46IJSNoMTod2FpGAQjpwfzm9J27MAxubiw7nSg6zV6CmmpqqhNBWHKeUWpGGnVtLNJ3wSx4aD3z3kzSGqJDQKew81IrFdzm86fjPd2YN4xE8z4tcYv~qUdX~-1VFLWO0YRS8sq8dwT1RyzToqNaarbFcMXWVxzXkaBSqc13MLAWaaroWrVmIykvIQTozp~2caG~uVYrhiEeZvX3byA9jWm2r98y91i9ndOvMgkiUk8WmCK4xwLwEuku6ZD0N~Hw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="hotelGalary"
+            />
+            <img
+              class="w-50 m-1"
+              src="https://s3-alpha-sig.figma.com/img/9c03/7428/fcc8ee64fe9d947569d78c1eb2e26259?Expires=1699228800&Signature=X8JeJP44sF6slAbSJUm1ajGKpHxWRwPK5qyodlIR1-mv7yZuCWQ5OxVIHSpoe2o04ibW1rN7f8TLk6VyUgNO0ffiskwq3BgyvA3MzbJkmomUOwm6pWo6fzmod1F1btM5ssYhBWVgXHghpqm9e7UfYoNQOLF-YlfDMx-Ttc97kmXMWwvmDBpYQgudO2YpVI4rX5TuMR4OgX1lK2U94Y4s1ImeLreQ1JBP~slLcIQ5F2gcLEIplGKy5FHBIg2oBMgqpcwNMGC15OHBXszBm99AbiSK8grWkpTQCFFolx1DrxfWGHlvqvd7nkZdqnnRuXFBAWsJqNc1CWf9prQhxs6u5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="hotelGalary"
+            />
+          </div>
+          <div class="d-flex">
+            <img
+              class="w-50 m-1"
+              src="https://s3-alpha-sig.figma.com/img/079e/23bf/4bb90ff22235b7665fc3ca85d2c34b28?Expires=1699228800&Signature=PeQ9sBHIU9lk2jGg~YmmIJkv~sKSjM-27gDXaDwdkf60Un2MVEWs6OHHd59RjsN-8OG-2WRLRVmQ~Qd6EDOY4ukBgDwLGn2jcn2-jVHNyjCQrNDnFTvL-KVwJqCQUkX-si0LB89~TDMHxLHfOHHvoc5F9Qo7lm459w4TMl15MyVrjP0Pfjt-spB10BKUFvhd4bMIH5Jwpvj9PoGxPUKPnJQyPgeeuUQBeayMVgfyEFcrLU5L~obybAQvfeuFYCFaXdeWnX1OqgatBuIf2t06WF8DFZYYzCTiq4iXW7Ace7f5j3qPqI6uTwGZbfLbAP0gc2SrWGpLb3pFQe-bqpo8eQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="hotelGalary"
+            />
+            <img
+              class="w-50 m-1"
+              src="https://s3-alpha-sig.figma.com/img/5297/e89b/bda05c1478e165e64250f76d43531d98?Expires=1699228800&Signature=m4XEPM~CgIMeJfX5zeKbJiof48PgjdRsj9SF5FLv9EV90BBwPanDOaRRBtyj~Pghiv4bpf8k4nYea-60IPDejNR7cr5RzTmvRStziXIZNDNCgEs9~vsFeWeDOmvLfsYBDkAez57fUxhkhCgCZLOj-3OQcQHePGhOy8hJfJSKvlf2izNOy6cja7C0BvlRwCC0ETWCJ0qFIsbjuVhP~E0AXJ9kvti3F6HyxXz~MuzisN15zqs1hamTixs19PHBqsEP4jGiqbAA6NYgGGPm5VP~qtM60AIs1giQpz2OOWoCgC0aG~BscIxMlp3Mkh6XoBQRaYLe2s-Ka~QCWTSVTg-ScA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="hotelGalary"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex my-5 container">
+      <div class="container">
+        <h1>Entire rental unit hosted by Ghazal</h1>
+        <div class="d-flex gap-4">
+          <h5>2 guests</h5>
+          <h5>1 bedroom</h5>
+          <h5>1 bed</h5>
+          <h5>1 bath</h5>
+        </div>
+      </div>
+      <div class="float-end">
+        <img
+          class="rounded-circle w-50"
+          src="https://s3-alpha-sig.figma.com/img/a615/f544/bf4d532059a9b5a4735809663411f54b?Expires=1699228800&Signature=GSJQ6L~WOBTHB20UGcb69r4tZoQezUJ9FXqz~Q~2Icj4XZIoOE2RoVhlsHMLyXlP7moCCuY2WCxB~hcjple81lujuWw34Vt~9mKGwtVw-jVj7tY3naxp-LkLsllyym9WA1sh2wYeNZCfNU1prwMxM5z-BtCegPf4mlhU6PnLCtbCkULKMVYB6qjS5UYcXYeaEOgS6cAzmOktyP4UcwPUIFTAxHpP~u7fWeurAjDnEZ31W8lBKQzzXSd-oHKgAQzbxNpnwy0U~qBgAQRtuZ0ZlF31PG~EFpIaQgYuCz0PtIhQ9fH0ENABCev1C9qgXZQlFq8BagkbRCRd7RfLs-9V9g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt="image"
+        />
+      </div>
+    
+    </div>
+    <hr class="container" />
+    <div class="container">
+      <div class="d-flex gap-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            d="M9.00029 25.6671H23.0003C24.473 25.6671 25.667 24.4732 25.667 23.0004V13.0004L16.0003 6.33374L6.33362 13.0004V23.0004C6.33362 24.4732 7.52753 25.6671 9.00029 25.6671Z"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12.9995 20.9989C12.9995 19.5262 14.1934 18.3323 15.6662 18.3323H16.3328C17.8056 18.3323 18.9995 19.5262 18.9995 20.9989V25.6656H12.9995V20.9989Z"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <h2>Entire home</h2>
+          <p>You’ll have the apartment to yourself</p>
+        </div>
+      </div>
+      <div class="d-flex gap-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            d="M20 6.33325C20 10.0151 18.0153 13.3333 14.3334 13.3333C18.0153 13.3333 20 16.6514 20 20.3333C20 16.6514 21.9848 13.3333 25.6667 13.3333C21.9848 13.3333 20 10.0151 20 6.33325Z"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.6667 16.9999C10.6667 19.2091 8.54251 21.3333 6.33337 21.3333C8.54251 21.3333 10.6667 23.4574 10.6667 25.6666C10.6667 23.4574 12.7909 21.3333 15 21.3333C12.7909 21.3333 10.6667 19.2091 10.6667 16.9999Z"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <h2>Enhanced Clean</h2>
+          <p>
+            This Host committed to Airbnb’s 5-step enhanced cleaning process.
+            Show more
+          </p>
+        </div>
+      </div>
+      <div class="d-flex gap-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            d="M20.3333 6.33325H11.6667C10.1939 6.33325 9 7.52716 9 8.99992V25.6666H23V8.99992C23 7.52716 21.8061 6.33325 20.3333 6.33325Z"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M19.3333 15.9999C19.3333 16.3681 19.0349 16.6666 18.6667 16.6666C18.2985 16.6666 18 16.3681 18 15.9999C18 15.6317 18.2985 15.3333 18.6667 15.3333C19.0349 15.3333 19.3333 15.6317 19.3333 15.9999Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.33337 25.6667H25.6667"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <h2>Self check-in</h2>
+          <p>Check yourself in with the keypad.</p>
+        </div>
+      </div>
+      <div class="d-flex gap-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            d="M6.33337 11.6667C6.33337 10.1939 7.52728 9 9.00004 9H23C24.4728 9 25.6667 10.1939 25.6667 11.6667V23C25.6667 24.4728 24.4728 25.6667 23 25.6667H9.00004C7.52728 25.6667 6.33337 24.4728 6.33337 23V11.6667Z"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.6666 6.33325V10.9999"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21.3334 6.33325V10.9999"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.3334 14.3333H21.6667"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <h2>Free cancellation before Feb 14</h2>
+        </div>
+      </div>
+    </div>
+    <hr class="container" />
+    <div class="container">
+      <b>
+        Come and stay in this superb duplex T2, in the heart of the historic
+        center of Bordeaux. Spacious and bright, in a real Bordeaux building in
+        exposed stone, you will enjoy all the charms of the city thanks to its
+        ideal location. Close to many shops, bars and restaurants, you can
+        access the apartment by tram A and C and bus routes 27 and 44. ...</b
+      >
+      <div>
+        <h5 class="d-flex my-3">
+          Show more
+          <button class="btn btn-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M7.16663 5.83337L9.49996 8.00004L7.16663 10.1667"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </h5>
+      </div>
+    </div>
+    <hr class="container" />
+    <div class="container">
+      <h1>Where you’ll sleep</h1>
+      <div class="my-3">
+        <img
+          class="w-25 rounded"
+          src="https://s3-alpha-sig.figma.com/img/91d6/ccd9/96e5b436aa98cbfacf7fc152380f2a69?Expires=1699228800&Signature=YskHrlUUTJflcZ-dBunurTHMwlsuWSOOBJPwmpszMM9bg98jQVz9bI5-w1hdMaKXfbnOKvgj~-epcFsqeDRW-FKz~JTlVGbK2rtDpggorSD0wVeTQLM8qBov3DQEs3epW2MPuOnzN7O7HmJcb~H-kokcwbB~12Niy5xD0VY3Q1GfSB58kugqpiNXPP287Lu~TgQoelgksYYC0DHds5TqPw7bIxERhQG3smM0Lfihb5pgTyxNgappi8jkhQyo3uuPYaQKhmEADS4LGNE5KbIG7gx0hqc0S6lxHf6ckfv7Mmvlsyg1~b8t5F45mdc49lI2BwLwB3oQ88TjkTQPFtXSLw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="my-3">What this place offers</h1>
+      <div class="d-flex gap-3">
+        <div class="float-left">
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M6.33337 17.3334C6.33337 9.86671 25.6667 6.33337 25.6667 6.33337C25.6667 6.33337 24.3334 25.6667 16 25.6667C10.6667 25.6667 6.33337 22.6667 6.33337 17.3334Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.33337 25.6666C6.33337 25.6666 10.6667 18.6666 16.3334 15.6666"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Garden view</h3>
+          </div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M16.6667 24C16.6667 24.3682 16.3682 24.6667 16 24.6667C15.6319 24.6667 15.3334 24.3682 15.3334 24C15.3334 23.6319 15.6319 23.3334 16 23.3334C16.3682 23.3334 16.6667 23.6319 16.6667 24Z"
+                stroke="black"
+              />
+              <path
+                d="M12.6666 19.417C13.602 18.7355 14.754 18.3334 16 18.3334C17.2459 18.3334 18.3979 18.7355 19.3333 19.417"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22.2837 14.9701C20.5024 13.7282 18.3364 13 16.0003 13C13.6641 13 11.4981 13.7282 9.7168 14.9701"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.66663 10.5942C9.31224 8.74886 12.5297 7.66663 16 7.66663C19.4702 7.66663 22.6877 8.74886 25.3333 10.5942"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Free washer - in building</h3>
+          </div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M19 16C19 17.6569 17.6569 19 16 19C14.3431 19 13 17.6569 13 16C13 14.3431 14.3431 13 16 13C17.6569 13 19 14.3431 19 16Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M25.6667 16C25.6667 21.3388 21.3388 25.6667 16 25.6667C10.6613 25.6667 6.33337 21.3388 6.33337 16C6.33337 10.6613 10.6613 6.33337 16 6.33337C21.3388 6.33337 25.6667 10.6613 25.6667 16Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Free washer - in building</h3>
+          </div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M14.3334 9.66671H23C24.4728 9.66671 25.6667 8.4728 25.6667 7.00004V6.33337"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.3334 16.3334H10.3334"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.66671 9.66663H6.33337"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.6667 22.3334H6.33337"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M25.6667 16.3334H21"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.3334 22.3334H23C24.4728 22.3334 25.6667 23.5273 25.6667 25V25.6667"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Central air conditioning</h3>
+          </div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M21.6669 25.6666H10.3333C8.86053 25.6666 7.66663 24.4727 7.66663 23V13.3333L16.0001 7.66663L24.3336 13.3333V23C24.3336 24.4727 23.1397 25.6666 21.6669 25.6666Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 14.3334H24"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16 7.66671V6.33337"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Refrigerator</h3>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M6.33325 9.00004C6.33325 7.52728 7.52716 6.33337 8.99992 6.33337H22.9999C24.4727 6.33337 25.6666 7.52728 25.6666 9.00004V21.6667C25.6666 23.1395 24.4727 24.3334 22.9999 24.3334H8.99992C7.52716 24.3334 6.33325 23.1395 6.33325 21.6667V9.00004Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 6.66663V24"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9 24.6666V25.6666"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M23 24.6666V25.6666"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.3333 10.3334L10.3333 12.3334"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.6666 10.3334L10.3333 17.6667"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Kitchen</h3>
+          </div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M22.9721 9.02782L22.231 8.91267C22.1943 9.14913 22.2726 9.38893 22.4418 9.55814C22.611 9.72736 22.8508 9.80566 23.0873 9.76892L22.9721 9.02782ZM21.5902 12.8846L22.1503 12.3858C22.013 12.2317 21.8182 12.1409 21.6119 12.1349C21.4055 12.129 21.2059 12.2083 21.0599 12.3543L21.5902 12.8846ZM12.8845 21.5903L12.3542 21.06C12.2082 21.206 12.1288 21.4057 12.1348 21.612C12.1408 21.8184 12.2315 22.0131 12.3857 22.1504L12.8845 21.5903ZM9.02769 22.9723L9.7688 23.0874C9.80554 22.8509 9.72723 22.6111 9.55802 22.4419C9.38881 22.2727 9.14901 22.1944 8.91255 22.2312L9.02769 22.9723ZM10.4096 19.1155L9.84955 19.6143C9.98684 19.7684 10.1816 19.8592 10.388 19.8651C10.5943 19.8711 10.794 19.7918 10.94 19.6458L10.4096 19.1155ZM19.1153 10.4097L19.6457 10.9401C19.7916 10.7941 19.871 10.5944 19.865 10.3881C19.8591 10.1817 19.7683 9.98696 19.6141 9.84967L19.1153 10.4097ZM23.7133 9.14296C23.7374 8.98731 23.7499 8.82821 23.7499 8.66671H22.2499C22.2499 8.75084 22.2434 8.83294 22.231 8.91267L23.7133 9.14296ZM23.3333 8.25004C23.1717 8.25004 23.0126 8.26253 22.857 8.28671L23.0873 9.76892C23.167 9.75654 23.2491 9.75004 23.3333 9.75004V8.25004ZM26.4166 11.3334C26.4166 9.6305 25.0361 8.25004 23.3333 8.25004V9.75004C24.2077 9.75004 24.9166 10.4589 24.9166 11.3334H26.4166ZM23.3333 14.4167C25.0361 14.4167 26.4166 13.0363 26.4166 11.3334H24.9166C24.9166 12.2078 24.2077 12.9167 23.3333 12.9167V14.4167ZM21.0301 13.3834C21.5938 14.0163 22.4172 14.4167 23.3333 14.4167V12.9167C22.863 12.9167 22.4414 12.7126 22.1503 12.3858L21.0301 13.3834ZM13.4148 22.1207L22.1205 13.415L21.0599 12.3543L12.3542 21.06L13.4148 22.1207ZM14.4166 23.3334C14.4166 22.4174 14.0162 21.5939 13.3833 21.0303L12.3857 22.1504C12.7125 22.4415 12.9166 22.8631 12.9166 23.3334H14.4166ZM11.3333 26.4167C13.0361 26.4167 14.4166 25.0363 14.4166 23.3334H12.9166C12.9166 24.2078 12.2077 24.9167 11.3333 24.9167V26.4167ZM8.24992 23.3334C8.24992 25.0363 9.63037 26.4167 11.3333 26.4167V24.9167C10.4588 24.9167 9.74992 24.2078 9.74992 23.3334H8.24992ZM8.28658 22.8571C8.2624 23.0128 8.24992 23.1719 8.24992 23.3334H9.74992C9.74992 23.2493 9.75641 23.1671 9.7688 23.0874L8.28658 22.8571ZM8.66659 23.75C8.82809 23.75 8.98719 23.7376 9.14284 23.7134L8.91255 22.2312C8.83282 22.2435 8.75071 22.25 8.66659 22.25V23.75ZM5.58325 20.6667C5.58325 22.3696 6.96371 23.75 8.66659 23.75V22.25C7.79213 22.25 7.08325 21.5412 7.08325 20.6667H5.58325ZM8.66659 17.5834C6.96371 17.5834 5.58325 18.9638 5.58325 20.6667H7.08325C7.08325 19.7923 7.79213 19.0834 8.66659 19.0834V17.5834ZM10.9697 18.6167C10.4061 17.9838 9.58259 17.5834 8.66659 17.5834V19.0834C9.13684 19.0834 9.55847 19.2874 9.84955 19.6143L10.9697 18.6167ZM18.585 9.87942L9.87929 18.5851L10.94 19.6458L19.6457 10.9401L18.585 9.87942ZM17.5833 8.66671C17.5833 9.58271 17.9836 10.4062 18.6165 10.9698L19.6141 9.84967C19.2873 9.55859 19.0833 9.13696 19.0833 8.66671H17.5833ZM20.6666 5.58337C18.9637 5.58337 17.5833 6.96383 17.5833 8.66671H19.0833C19.0833 7.79226 19.7921 7.08337 20.6666 7.08337V5.58337ZM23.7499 8.66671C23.7499 6.96383 22.3695 5.58337 20.6666 5.58337V7.08337C21.541 7.08337 22.2499 7.79226 22.2499 8.66671H23.7499Z"
+                fill="#141414"
+              />
+            </svg>
+            <h3>Pets allowed</h3>
+          </div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M24.3333 18.6667C24.3333 24 20.6667 25.6667 16 25.6667C10.6667 25.6667 7.66675 21.8667 7.66675 18.6667C7.66675 15.4667 9.33341 12.5556 10.6667 11.6667C10.6667 15.4 14.2223 17.7778 16 17.6667C12.8 12.8667 15.5556 7.5556 17.3333 6.33337C17.3333 12.3334 24.3333 13.3334 24.3333 18.6667Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Dryer</h3>
+          </div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M20.6666 13.3333L25.6666 10.3333V21.6667L20.6666 18.6667M8.99992 23H17.6666C19.1393 23 20.3333 21.8061 20.3333 20.3333V11.6667C20.3333 10.1939 19.1393 9 17.6666 9H8.99992C7.52716 9 6.33325 10.1939 6.33325 11.6667V20.3333C6.33325 21.8061 7.52716 23 8.99992 23Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Security cameras on property</h3>
+          </div>
+          <div class="d-flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <ellipse
+                cx="9.33325"
+                cy="17.3334"
+                rx="3"
+                ry="3"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <ellipse
+                cx="22.6667"
+                cy="17.3334"
+                rx="3"
+                ry="3"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.3334 14.6666L19.6667 7.66663H25.3334"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.6666 17.3333H16.3333M16.3333 17.3333L11.6666 10.3333H13.9999H9.33325M16.3333 17.3333H19.3333"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.33325 24.3334H25.6666"
+                stroke="#141414"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3>Bicycles</h3>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-light my-3 border-black">Show all 37 amenities</button>
+    </div>
+    <hr class="container">
+    <div class="container">
+     <div>
+      <h1>7 nights in New York</h1>
+      <p>Feb 19, 2022 - Feb 26, 2022</p>
+     </div>
+    </div>
+
+  </body>
+</html>
